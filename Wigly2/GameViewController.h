@@ -12,8 +12,10 @@
 @interface GameViewController : UIViewController
 
 @property (strong) IBOutlet UIView *gridView;
+@property (strong) IBOutlet UILabel *score;
 @property (strong) GridCell *gridCell;
 @property NSTimer *timer;
+@property bool isStart;
 
 -(IBAction)btnPressed:(UIButton*)sender;
 -(void) update;

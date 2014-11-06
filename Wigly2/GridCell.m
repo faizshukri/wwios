@@ -16,11 +16,14 @@
     
     if(self){
         
-        // Initially we set running status to true, and win status to be false
+        // Initiate running status to true, and win status to be false
         self.isRunning = true;
         self.isWin = false;
         
-        // Initialize cell object with uiimageview
+        // Initiate score to 0
+        self.score = 0;
+        
+        // Initiate cell object with uiimageview
         UIImage *emptyCell = [UIImage imageNamed:@"emptycell.png"];
         UIImage *wormFace = [UIImage imageNamed:@"wormface.png"];
         UIImage *wormBody = [UIImage imageNamed:@"snakecell.png"];
@@ -161,6 +164,8 @@
     
     _gridCoordinate[(int)newHead.x][(int)newHead.y] = WORM_CELL;
     _gridCoordinate[(int)tail.x][(int)tail.y] = EMPTY_CELL;
+    
+    self.score += 10;
     
 }
 

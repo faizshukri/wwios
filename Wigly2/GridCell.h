@@ -27,6 +27,7 @@ enum CellType { EMPTY_CELL, HOLE_CELL, SHROOM_CELL, WORM_CELL };
 @property UIImageView *wormHole;
 @property UIImageView *mushroom;
 
+@property int score;
 @property char currentDirection;
 @property NSMutableArray *wormPosition;
 @property bool isRunning;
