@@ -14,9 +14,12 @@
 @property (strong) IBOutlet UIView *gridView;
 @property (strong) IBOutlet UILabel *score;
 @property (strong) GridCell *gridCell;
+@property int countdown;
+@property (strong) IBOutlet UILabel *countdownLabel;
 @property NSTimer *timer;
 @property bool isStart;
 
 -(IBAction)btnPressed:(UIButton*)sender;
+-(IBAction)btnBack:(id)sender;
 -(void) update;
 @end
