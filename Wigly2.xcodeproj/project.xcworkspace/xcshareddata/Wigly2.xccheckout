@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C81DE2BC-C94C-4009-A233-A1955734353B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Wigly2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>902044CAA637AC92BC2428DEF0A8647EC5BD9E2B</key>
+		<string>github.com:faizshukri/wiglywormhole.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Wigly2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>902044CAA637AC92BC2428DEF0A8647EC5BD9E2B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:faizshukri/wiglywormhole.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>902044CAA637AC92BC2428DEF0A8647EC5BD9E2B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>902044CAA637AC92BC2428DEF0A8647EC5BD9E2B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Wigly2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

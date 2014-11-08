@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3C512FF1A0ED7E2007E23D9 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C512FC1A0ED7E2007E23D9 /* play.png */; };
+		C3C513001A0ED7E2007E23D9 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C512FD1A0ED7E2007E23D9 /* setting.png */; };
+		C3C513021A0EDA22007E23D9 /* quit.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C513011A0EDA22007E23D9 /* quit.png */; };
+		C3C513041A0EDAB6007E23D9 /* high_score.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C513031A0EDAB6007E23D9 /* high_score.png */; };
+		C3C513071A0EDF92007E23D9 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C513061A0EDF92007E23D9 /* SettingsViewController.m */; };
 		C3D4DFD01A0BA54600B1B67F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D4DFCF1A0BA54600B1B67F /* main.m */; };
 		C3D4DFD31A0BA54600B1B67F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D4DFD21A0BA54600B1B67F /* AppDelegate.m */; };
 		C3D4DFD61A0BA54600B1B67F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D4DFD51A0BA54600B1B67F /* ViewController.m */; };
@@ -34,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3C512FC1A0ED7E2007E23D9 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		C3C512FD1A0ED7E2007E23D9 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		C3C513011A0EDA22007E23D9 /* quit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quit.png; sourceTree = "<group>"; };
+		C3C513031A0EDAB6007E23D9 /* high_score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = high_score.png; sourceTree = "<group>"; };
+		C3C513051A0EDF92007E23D9 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		C3C513061A0EDF92007E23D9 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		C3D4DFCA1A0BA54600B1B67F /* Wigly2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wigly2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D4DFCE1A0BA54600B1B67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3D4DFCF1A0BA54600B1B67F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +114,8 @@
 				C3D4DFD51A0BA54600B1B67F /* ViewController.m */,
 				C3D4DFF31A0BA5D600B1B67F /* GameViewController.h */,
 				C3D4DFF41A0BA5D600B1B67F /* GameViewController.m */,
+				C3C513051A0EDF92007E23D9 /* SettingsViewController.h */,
+				C3C513061A0EDF92007E23D9 /* SettingsViewController.m */,
 				C3D4E0001A0BAA4200B1B67F /* GridCell.h */,
 				C3D4E0011A0BAA4200B1B67F /* GridCell.m */,
 				C3D4DFD71A0BA54600B1B67F /* Main.storyboard */,
@@ -116,6 +129,10 @@
 		C3D4DFCD1A0BA54600B1B67F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3C513031A0EDAB6007E23D9 /* high_score.png */,
+				C3C513011A0EDA22007E23D9 /* quit.png */,
+				C3C512FC1A0ED7E2007E23D9 /* play.png */,
+				C3C512FD1A0ED7E2007E23D9 /* setting.png */,
 				C3D4DFF61A0BA76600B1B67F /* emptycell.png */,
 				C3D4DFF71A0BA76600B1B67F /* shroomcell.png */,
 				C3D4DFF81A0BA76600B1B67F /* snakecell.png */,
@@ -224,9 +241,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C513041A0EDAB6007E23D9 /* high_score.png in Resources */,
+				C3C512FF1A0ED7E2007E23D9 /* play.png in Resources */,
+				C3C513021A0EDA22007E23D9 /* quit.png in Resources */,
 				C3D4DFFF1A0BA76600B1B67F /* wormholecell.png in Resources */,
 				C3D4DFFE1A0BA76600B1B67F /* wormface.png in Resources */,
 				C3D4DFFD1A0BA76600B1B67F /* snakecell.png in Resources */,
+				C3C513001A0ED7E2007E23D9 /* setting.png in Resources */,
 				C3D4DFD91A0BA54600B1B67F /* Main.storyboard in Resources */,
 				C3D4DFDE1A0BA54600B1B67F /* LaunchScreen.xib in Resources */,
 				C3D4DFFC1A0BA76600B1B67F /* shroomcell.png in Resources */,
@@ -252,6 +273,7 @@
 				C3D4DFF51A0BA5D600B1B67F /* GameViewController.m in Sources */,
 				C3D4DFD61A0BA54600B1B67F /* ViewController.m in Sources */,
 				C3D4DFD31A0BA54600B1B67F /* AppDelegate.m in Sources */,
+				C3C513071A0EDF92007E23D9 /* SettingsViewController.m in Sources */,
 				C3D4E0021A0BAA4200B1B67F /* GridCell.m in Sources */,
 				C3D4DFD01A0BA54600B1B67F /* main.m in Sources */,
 			);
@@ -444,6 +466,7 @@
 				C3D4DFEF1A0BA54600B1B67F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3D4DFF01A0BA54600B1B67F /* Build configuration list for PBXNativeTarget "Wigly2Tests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +475,7 @@
 				C3D4DFF21A0BA54600B1B67F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
