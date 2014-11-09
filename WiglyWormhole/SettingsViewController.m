@@ -16,12 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if(![defaults boolForKey:@"saveFirst"]){
-        [self resetDefault:self];
-    }
-    
     [self updateSetting];
     
     // Uncomment the following line to preserve selection between presentations.

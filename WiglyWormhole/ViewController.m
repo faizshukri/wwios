@@ -18,8 +18,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    _defaults = [NSUserDefaults standardUserDefaults];
+    
     NSString *archivePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"score.archive"];
-    [[NSUserDefaults standardUserDefaults] setValue:archivePath forKey:@"score_path"];
+    [_defaults setValue:archivePath forKey:@"score_path"];
+    
+    if(![_defaults boolForKey:@"saveFirst"]){
+        self.settings = [[SettingsViewController alloc] init];
+        [self.settings resetDefault:self];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SettingsViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    NSUserDefaults *_defaults;
+}
 
-
+@property SettingsViewController *settings;
 
 @end
 
