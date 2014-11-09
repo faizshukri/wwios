@@ -31,7 +31,6 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
@@ -53,6 +52,7 @@
     NSArray *currentData = [self.scores objectAtIndex:indexPath.row];
     cell.textLabel.text = [currentData objectAtIndex:0];
     cell.detailTextLabel.text = [currentData objectAtIndex:1];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     // Configure the cell...
     
@@ -71,13 +71,13 @@
     return [sortedCopy mutableCopy];
 }
 
-/*
+
 // Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+////     Return NO if you do not want the specified item to be editable.
+//    return NO;
+//}
+
 
 /*
 // Override to support editing the table view.

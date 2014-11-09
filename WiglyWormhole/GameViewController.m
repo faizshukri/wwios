@@ -43,11 +43,6 @@
 }
 
 -(IBAction)btnRestart:(id)sender {
-////    // Remove the old subview
-////    for(UIView *subView in [self.gridView subviews]){
-////        [subView removeFromSuperview];
-////    }
-//    
     [self prepare];
 }
 
@@ -56,7 +51,6 @@
     
     // If countdown is more than zero, just update the label text and wait for another time lapse
     if(self.countdown > 0){
-        NSLog(@"Start in %d",self.countdown);
         self.countdownLabel.text = [NSString stringWithFormat:@"%d", self.countdown];
         self.countdown -= 1;
         return;
@@ -184,12 +178,12 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
     [super viewWillAppear:animated];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
     [super viewWillDisappear:animated];
 }
 

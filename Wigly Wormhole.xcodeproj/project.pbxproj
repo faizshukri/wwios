@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C3618FFA1A0F669200B6A1F8 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3618FF91A0F669200B6A1F8 /* beep.mp3 */; };
+		C3925D081A0FF6DB00911BEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3925D071A0FF6DB00911BEE /* Images.xcassets */; };
+		C3925D0A1A10004B00911BEE /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = C3925D091A10004B00911BEE /* appicon.png */; };
+		C3925D0C1A10036200911BEE /* font.png in Resources */ = {isa = PBXBuildFile; fileRef = C3925D0B1A10036200911BEE /* font.png */; };
 		C3C4D16A1A0F86FD0082DEB7 /* HighScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C4D1691A0F86FD0082DEB7 /* HighScoreViewController.m */; };
-		C3C4D16D1A0F95660082DEB7 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C4D16C1A0F95660082DEB7 /* Score.m */; };
 		C3C4D17C1A0FAC9B0082DEB7 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C4D1781A0FAC9B0082DEB7 /* down.png */; };
 		C3C4D17D1A0FAC9B0082DEB7 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C4D1791A0FAC9B0082DEB7 /* left.png */; };
 		C3C4D17E1A0FAC9B0082DEB7 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C4D17A1A0FAC9B0082DEB7 /* right.png */; };
@@ -23,7 +25,6 @@
 		C3D4DFD31A0BA54600B1B67F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D4DFD21A0BA54600B1B67F /* AppDelegate.m */; };
 		C3D4DFD61A0BA54600B1B67F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D4DFD51A0BA54600B1B67F /* ViewController.m */; };
 		C3D4DFD91A0BA54600B1B67F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D4DFD71A0BA54600B1B67F /* Main.storyboard */; };
-		C3D4DFDB1A0BA54600B1B67F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D4DFDA1A0BA54600B1B67F /* Images.xcassets */; };
 		C3D4DFDE1A0BA54600B1B67F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D4DFDC1A0BA54600B1B67F /* LaunchScreen.xib */; };
 		C3D4DFEA1A0BA54600B1B67F /* Wigly2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D4DFE91A0BA54600B1B67F /* Wigly2Tests.m */; };
 		C3D4DFF51A0BA5D600B1B67F /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D4DFF41A0BA5D600B1B67F /* GameViewController.m */; };
@@ -47,10 +48,11 @@
 
 /* Begin PBXFileReference section */
 		C3618FF91A0F669200B6A1F8 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		C3925D071A0FF6DB00911BEE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		C3925D091A10004B00911BEE /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		C3925D0B1A10036200911BEE /* font.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = font.png; sourceTree = "<group>"; };
 		C3C4D1681A0F86FD0082DEB7 /* HighScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreViewController.h; sourceTree = "<group>"; };
 		C3C4D1691A0F86FD0082DEB7 /* HighScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreViewController.m; sourceTree = "<group>"; };
-		C3C4D16B1A0F95660082DEB7 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
-		C3C4D16C1A0F95660082DEB7 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
 		C3C4D1781A0FAC9B0082DEB7 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
 		C3C4D1791A0FAC9B0082DEB7 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
 		C3C4D17A1A0FAC9B0082DEB7 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
@@ -61,7 +63,7 @@
 		C3C513031A0EDAB6007E23D9 /* high_score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = high_score.png; sourceTree = "<group>"; };
 		C3C513051A0EDF92007E23D9 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		C3C513061A0EDF92007E23D9 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		C3D4DFCA1A0BA54600B1B67F /* Wigly2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wigly2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D4DFCA1A0BA54600B1B67F /* Wigly Wormhole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wigly Wormhole.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D4DFCE1A0BA54600B1B67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3D4DFCF1A0BA54600B1B67F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3D4DFD11A0BA54600B1B67F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,9 +71,8 @@
 		C3D4DFD41A0BA54600B1B67F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C3D4DFD51A0BA54600B1B67F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C3D4DFD81A0BA54600B1B67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C3D4DFDA1A0BA54600B1B67F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C3D4DFDD1A0BA54600B1B67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C3D4DFE31A0BA54600B1B67F /* Wigly2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wigly2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D4DFE31A0BA54600B1B67F /* WiglyWormholeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiglyWormholeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D4DFE81A0BA54600B1B67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3D4DFE91A0BA54600B1B67F /* Wigly2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wigly2Tests.m; sourceTree = "<group>"; };
 		C3D4DFF31A0BA5D600B1B67F /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
@@ -106,8 +107,8 @@
 		C3D4DFC11A0BA54600B1B67F = {
 			isa = PBXGroup;
 			children = (
-				C3D4DFCC1A0BA54600B1B67F /* Wigly2 */,
-				C3D4DFE61A0BA54600B1B67F /* Wigly2Tests */,
+				C3D4DFCC1A0BA54600B1B67F /* Wigly Wormhole */,
+				C3D4DFE61A0BA54600B1B67F /* WiglyWormholeTests */,
 				C3D4DFCB1A0BA54600B1B67F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,15 +116,16 @@
 		C3D4DFCB1A0BA54600B1B67F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C3D4DFCA1A0BA54600B1B67F /* Wigly2.app */,
-				C3D4DFE31A0BA54600B1B67F /* Wigly2Tests.xctest */,
+				C3D4DFCA1A0BA54600B1B67F /* Wigly Wormhole.app */,
+				C3D4DFE31A0BA54600B1B67F /* WiglyWormholeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C3D4DFCC1A0BA54600B1B67F /* Wigly2 */ = {
+		C3D4DFCC1A0BA54600B1B67F /* Wigly Wormhole */ = {
 			isa = PBXGroup;
 			children = (
+				C3925D071A0FF6DB00911BEE /* Images.xcassets */,
 				C3D4DFD11A0BA54600B1B67F /* AppDelegate.h */,
 				C3D4DFD21A0BA54600B1B67F /* AppDelegate.m */,
 				C3D4DFD41A0BA54600B1B67F /* ViewController.h */,
@@ -136,19 +138,19 @@
 				C3C4D1691A0F86FD0082DEB7 /* HighScoreViewController.m */,
 				C3D4E0001A0BAA4200B1B67F /* GridCell.h */,
 				C3D4E0011A0BAA4200B1B67F /* GridCell.m */,
-				C3C4D16B1A0F95660082DEB7 /* Score.h */,
-				C3C4D16C1A0F95660082DEB7 /* Score.m */,
 				C3D4DFD71A0BA54600B1B67F /* Main.storyboard */,
-				C3D4DFDA1A0BA54600B1B67F /* Images.xcassets */,
 				C3D4DFDC1A0BA54600B1B67F /* LaunchScreen.xib */,
 				C3D4DFCD1A0BA54600B1B67F /* Supporting Files */,
 			);
-			path = Wigly2;
+			name = "Wigly Wormhole";
+			path = WiglyWormhole;
 			sourceTree = "<group>";
 		};
 		C3D4DFCD1A0BA54600B1B67F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3925D0B1A10036200911BEE /* font.png */,
+				C3925D091A10004B00911BEE /* appicon.png */,
 				C3C4D1781A0FAC9B0082DEB7 /* down.png */,
 				C3C4D1791A0FAC9B0082DEB7 /* left.png */,
 				C3C4D17A1A0FAC9B0082DEB7 /* right.png */,
@@ -169,13 +171,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C3D4DFE61A0BA54600B1B67F /* Wigly2Tests */ = {
+		C3D4DFE61A0BA54600B1B67F /* WiglyWormholeTests */ = {
 			isa = PBXGroup;
 			children = (
 				C3D4DFE91A0BA54600B1B67F /* Wigly2Tests.m */,
 				C3D4DFE71A0BA54600B1B67F /* Supporting Files */,
 			);
-			path = Wigly2Tests;
+			path = WiglyWormholeTests;
 			sourceTree = "<group>";
 		};
 		C3D4DFE71A0BA54600B1B67F /* Supporting Files */ = {
@@ -189,9 +191,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C3D4DFC91A0BA54600B1B67F /* Wigly2 */ = {
+		C3D4DFC91A0BA54600B1B67F /* Wigly Wormhole */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3D4DFED1A0BA54600B1B67F /* Build configuration list for PBXNativeTarget "Wigly2" */;
+			buildConfigurationList = C3D4DFED1A0BA54600B1B67F /* Build configuration list for PBXNativeTarget "Wigly Wormhole" */;
 			buildPhases = (
 				C3D4DFC61A0BA54600B1B67F /* Sources */,
 				C3D4DFC71A0BA54600B1B67F /* Frameworks */,
@@ -201,14 +203,14 @@
 			);
 			dependencies = (
 			);
-			name = Wigly2;
+			name = "Wigly Wormhole";
 			productName = Wigly2;
-			productReference = C3D4DFCA1A0BA54600B1B67F /* Wigly2.app */;
+			productReference = C3D4DFCA1A0BA54600B1B67F /* Wigly Wormhole.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C3D4DFE21A0BA54600B1B67F /* Wigly2Tests */ = {
+		C3D4DFE21A0BA54600B1B67F /* WiglyWormholeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3D4DFF01A0BA54600B1B67F /* Build configuration list for PBXNativeTarget "Wigly2Tests" */;
+			buildConfigurationList = C3D4DFF01A0BA54600B1B67F /* Build configuration list for PBXNativeTarget "WiglyWormholeTests" */;
 			buildPhases = (
 				C3D4DFDF1A0BA54600B1B67F /* Sources */,
 				C3D4DFE01A0BA54600B1B67F /* Frameworks */,
@@ -219,9 +221,9 @@
 			dependencies = (
 				C3D4DFE51A0BA54600B1B67F /* PBXTargetDependency */,
 			);
-			name = Wigly2Tests;
+			name = WiglyWormholeTests;
 			productName = Wigly2Tests;
-			productReference = C3D4DFE31A0BA54600B1B67F /* Wigly2Tests.xctest */;
+			productReference = C3D4DFE31A0BA54600B1B67F /* WiglyWormholeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -238,11 +240,10 @@
 					};
 					C3D4DFE21A0BA54600B1B67F = {
 						CreatedOnToolsVersion = 6.1;
-						TestTargetID = C3D4DFC91A0BA54600B1B67F;
 					};
 				};
 			};
-			buildConfigurationList = C3D4DFC51A0BA54600B1B67F /* Build configuration list for PBXProject "Wigly2" */;
+			buildConfigurationList = C3D4DFC51A0BA54600B1B67F /* Build configuration list for PBXProject "Wigly Wormhole" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -255,8 +256,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C3D4DFC91A0BA54600B1B67F /* Wigly2 */,
-				C3D4DFE21A0BA54600B1B67F /* Wigly2Tests */,
+				C3D4DFC91A0BA54600B1B67F /* Wigly Wormhole */,
+				C3D4DFE21A0BA54600B1B67F /* WiglyWormholeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,12 +277,14 @@
 				C3618FFA1A0F669200B6A1F8 /* beep.mp3 in Resources */,
 				C3D4DFD91A0BA54600B1B67F /* Main.storyboard in Resources */,
 				C3C4D17F1A0FAC9B0082DEB7 /* up.png in Resources */,
+				C3925D0A1A10004B00911BEE /* appicon.png in Resources */,
 				C3C4D17C1A0FAC9B0082DEB7 /* down.png in Resources */,
+				C3925D0C1A10036200911BEE /* font.png in Resources */,
 				C3C4D17E1A0FAC9B0082DEB7 /* right.png in Resources */,
 				C3D4DFDE1A0BA54600B1B67F /* LaunchScreen.xib in Resources */,
 				C3C4D17D1A0FAC9B0082DEB7 /* left.png in Resources */,
+				C3925D081A0FF6DB00911BEE /* Images.xcassets in Resources */,
 				C3D4DFFC1A0BA76600B1B67F /* shroomcell.png in Resources */,
-				C3D4DFDB1A0BA54600B1B67F /* Images.xcassets in Resources */,
 				C3D4DFFB1A0BA76600B1B67F /* emptycell.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +309,6 @@
 				C3D4DFD31A0BA54600B1B67F /* AppDelegate.m in Sources */,
 				C3C513071A0EDF92007E23D9 /* SettingsViewController.m in Sources */,
 				C3D4E0021A0BAA4200B1B67F /* GridCell.m in Sources */,
-				C3C4D16D1A0F95660082DEB7 /* Score.m in Sources */,
 				C3D4DFD01A0BA54600B1B67F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +326,7 @@
 /* Begin PBXTargetDependency section */
 		C3D4DFE51A0BA54600B1B67F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C3D4DFC91A0BA54600B1B67F /* Wigly2 */;
+			target = C3D4DFC91A0BA54600B1B67F /* Wigly Wormhole */;
 			targetProxy = C3D4DFE41A0BA54600B1B67F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -429,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Wigly2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WiglyWormhole/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -439,7 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Wigly2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WiglyWormhole/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -448,7 +450,6 @@
 		C3D4DFF11A0BA54600B1B67F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -457,32 +458,29 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Wigly2Tests/Info.plist;
+				INFOPLIST_FILE = WiglyWormholeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wigly2.app/Wigly2";
 			};
 			name = Debug;
 		};
 		C3D4DFF21A0BA54600B1B67F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Wigly2Tests/Info.plist;
+				INFOPLIST_FILE = WiglyWormholeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wigly2.app/Wigly2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C3D4DFC51A0BA54600B1B67F /* Build configuration list for PBXProject "Wigly2" */ = {
+		C3D4DFC51A0BA54600B1B67F /* Build configuration list for PBXProject "Wigly Wormhole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3D4DFEB1A0BA54600B1B67F /* Debug */,
@@ -491,7 +489,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3D4DFED1A0BA54600B1B67F /* Build configuration list for PBXNativeTarget "Wigly2" */ = {
+		C3D4DFED1A0BA54600B1B67F /* Build configuration list for PBXNativeTarget "Wigly Wormhole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3D4DFEE1A0BA54600B1B67F /* Debug */,
@@ -500,7 +498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3D4DFF01A0BA54600B1B67F /* Build configuration list for PBXNativeTarget "Wigly2Tests" */ = {
+		C3D4DFF01A0BA54600B1B67F /* Build configuration list for PBXNativeTarget "WiglyWormholeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3D4DFF11A0BA54600B1B67F /* Debug */,

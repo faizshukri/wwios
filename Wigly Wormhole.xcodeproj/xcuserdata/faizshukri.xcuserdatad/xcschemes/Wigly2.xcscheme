@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C3D4DFC91A0BA54600B1B67F"
-               BuildableName = "Wigly2.app"
-               BlueprintName = "Wigly2"
-               ReferencedContainer = "container:Wigly2.xcodeproj">
+               BuildableName = "Wigly Wormhole.app"
+               BlueprintName = "Wigly Wormhole"
+               ReferencedContainer = "container:Wigly Wormhole.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C3D4DFE21A0BA54600B1B67F"
-               BuildableName = "Wigly2Tests.xctest"
-               BlueprintName = "Wigly2Tests"
-               ReferencedContainer = "container:Wigly2.xcodeproj">
+               BuildableName = "WiglyWormholeTests.xctest"
+               BlueprintName = "WiglyWormholeTests"
+               ReferencedContainer = "container:Wigly Wormhole.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C3D4DFE21A0BA54600B1B67F"
-               BuildableName = "Wigly2Tests.xctest"
-               BlueprintName = "Wigly2Tests"
-               ReferencedContainer = "container:Wigly2.xcodeproj">
+               BuildableName = "WiglyWormholeTests.xctest"
+               BlueprintName = "WiglyWormholeTests"
+               ReferencedContainer = "container:Wigly Wormhole.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C3D4DFC91A0BA54600B1B67F"
-            BuildableName = "Wigly2.app"
-            BlueprintName = "Wigly2"
-            ReferencedContainer = "container:Wigly2.xcodeproj">
+            BuildableName = "Wigly Wormhole.app"
+            BlueprintName = "Wigly Wormhole"
+            ReferencedContainer = "container:Wigly Wormhole.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C3D4DFC91A0BA54600B1B67F"
-            BuildableName = "Wigly2.app"
-            BlueprintName = "Wigly2"
-            ReferencedContainer = "container:Wigly2.xcodeproj">
+            BuildableName = "Wigly Wormhole.app"
+            BlueprintName = "Wigly Wormhole"
+            ReferencedContainer = "container:Wigly Wormhole.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C3D4DFC91A0BA54600B1B67F"
-            BuildableName = "Wigly2.app"
-            BlueprintName = "Wigly2"
-            ReferencedContainer = "container:Wigly2.xcodeproj">
+            BuildableName = "Wigly Wormhole.app"
+            BlueprintName = "Wigly Wormhole"
+            ReferencedContainer = "container:Wigly Wormhole.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
