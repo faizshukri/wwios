@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 #define GRID_WIDTH          14
 #define GRID_HEIGHT         20
@@ -19,6 +20,8 @@ enum CellType { EMPTY_CELL, HOLE_CELL, SHROOM_CELL, WORM_CELL };
 @interface GridCell : NSObject {
     enum CellType _gridCoordinate[GRID_WIDTH][GRID_HEIGHT];
     int _wormHeadCoordinate[2];
+    AVAudioPlayer *_audioPlayer;
+    NSUserDefaults *_default;
 }
 
 @property UIImageView *emptyCell;
@@ -33,6 +36,8 @@ enum CellType { EMPTY_CELL, HOLE_CELL, SHROOM_CELL, WORM_CELL };
 @property bool isRunning;
 @property bool isWin;
 
+
+-(void) gameStop;
 -(UIView*) gridImage;
 -(void) moveWorm;
 -(CGPoint) getRandomEmptyCell;

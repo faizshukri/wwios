@@ -16,6 +16,8 @@
     
     if(self){
         
+        _default = [NSUserDefaults standardUserDefaults];
+        
         // Initiate running status to true, and win status to be false
         self.isRunning = true;
         self.isWin = false;
@@ -35,6 +37,9 @@
         self.wormBody = [[UIImageView alloc] initWithImage:wormBody];
         self.wormHole = [[UIImageView alloc] initWithImage:wormHole];
         self.mushroom = [[UIImageView alloc] initWithImage:mushroom];
+        
+        NSURL *soundUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"beep" ofType:@"mp3"]];
+        _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
         
         // Default direction is down
         self.currentDirection = 'd';
@@ -71,7 +76,7 @@
     _gridCoordinate[ (int)head.x ][ (int)head.y ] = WORM_CELL;
     
     // 3. Populate wormhole
-    for (int i = 0; i < NUM_OF_WORMHOLE; i++) {
+    for (int i = 0; i < [_default integerForKey:@"wormhole"]; i++) {
         CGPoint holePoint = [self getRandomEmptyCell];
         _gridCoordinate[(int)holePoint.x][(int)holePoint.y] = HOLE_CELL;
     }
@@ -162,8 +167,13 @@
         [self.wormPosition removeLastObject];
     }
     
+    if([_default boolForKey:@"sound"]) [_audioPlayer play];
+    
     _gridCoordinate[(int)newHead.x][(int)newHead.y] = WORM_CELL;
     _gridCoordinate[(int)tail.x][(int)tail.y] = EMPTY_CELL;
+    
+    
+    
     
     self.score += 10;
     
@@ -182,6 +192,10 @@
     }
     
     return CGPointMake(x, y);
+}
+
+-(void) gameStop {
+    [_audioPlayer stop];
 }
 
 @end

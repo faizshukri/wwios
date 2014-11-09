@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UIStepper *wormholeStepper;
 @property (weak, nonatomic) IBOutlet UITextField *wormholeText;
 
+-(IBAction)stepperPressed:(id)sender;
 -(IBAction)saveDefault:(id)sender;
 -(IBAction)resetDefault:(id)sender;
+-(void) updateSetting;
 @end

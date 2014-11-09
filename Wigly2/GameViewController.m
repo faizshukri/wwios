@@ -15,6 +15,8 @@
 @implementation GameViewController
 
 -(IBAction)btnBack:(id)sender {
+    [self.timer invalidate];
+    [self.gridCell gameStop];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -52,7 +54,23 @@
     } else if (self.countdown == 0) {
         self.countdownLabel.hidden = YES;
         [self.timer invalidate];
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(update) userInfo:nil repeats:YES];
+        
+        float speed;
+        
+        switch ([_defaults integerForKey:@"speed"]) {
+            
+            case 0:
+                speed = 0.3;
+                break;
+            case 2:
+                speed = 0.15;
+                break;
+            default:
+                speed = 0.2;
+                break;
+        }
+        
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:speed target:self selector:@selector(update) userInfo:nil repeats:YES];
         self.countdown = -1;
         return;
     }
@@ -86,6 +104,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    _defaults = [NSUserDefaults standardUserDefaults];
+    
     self.isStart = false;
     
     // Initialize GridCell Object

@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "GridCell.h"
 
-@interface GameViewController : UIViewController
+@interface GameViewController : UIViewController {
+    NSUserDefaults *_defaults;
+}
 
 @property (strong) IBOutlet UIView *gridView;
 @property (strong) IBOutlet UILabel *score;
