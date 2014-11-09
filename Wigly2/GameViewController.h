@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GridCell.h"
 
-@interface GameViewController : UIViewController {
+@interface GameViewController : UIViewController <UIAlertViewDelegate> {
     NSUserDefaults *_defaults;
 }
 
@@ -19,9 +19,12 @@
 @property int countdown;
 @property (strong) IBOutlet UILabel *countdownLabel;
 @property NSTimer *timer;
-@property bool isStart;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet UIButton *resetButton;
 
 -(IBAction)btnPressed:(UIButton*)sender;
 -(IBAction)btnBack:(id)sender;
+-(IBAction)btnRestart:(id)sender;
 -(void) update;
+-(void)prepare;
 @end

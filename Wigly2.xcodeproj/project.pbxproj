@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C3618FFA1A0F669200B6A1F8 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3618FF91A0F669200B6A1F8 /* beep.mp3 */; };
+		C3C4D16A1A0F86FD0082DEB7 /* HighScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C4D1691A0F86FD0082DEB7 /* HighScoreViewController.m */; };
+		C3C4D16D1A0F95660082DEB7 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C4D16C1A0F95660082DEB7 /* Score.m */; };
+		C3C4D17C1A0FAC9B0082DEB7 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C4D1781A0FAC9B0082DEB7 /* down.png */; };
+		C3C4D17D1A0FAC9B0082DEB7 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C4D1791A0FAC9B0082DEB7 /* left.png */; };
+		C3C4D17E1A0FAC9B0082DEB7 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C4D17A1A0FAC9B0082DEB7 /* right.png */; };
+		C3C4D17F1A0FAC9B0082DEB7 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C4D17B1A0FAC9B0082DEB7 /* up.png */; };
 		C3C512FF1A0ED7E2007E23D9 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C512FC1A0ED7E2007E23D9 /* play.png */; };
 		C3C513001A0ED7E2007E23D9 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C512FD1A0ED7E2007E23D9 /* setting.png */; };
 		C3C513021A0EDA22007E23D9 /* quit.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C513011A0EDA22007E23D9 /* quit.png */; };
@@ -41,6 +47,14 @@
 
 /* Begin PBXFileReference section */
 		C3618FF91A0F669200B6A1F8 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		C3C4D1681A0F86FD0082DEB7 /* HighScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreViewController.h; sourceTree = "<group>"; };
+		C3C4D1691A0F86FD0082DEB7 /* HighScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreViewController.m; sourceTree = "<group>"; };
+		C3C4D16B1A0F95660082DEB7 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		C3C4D16C1A0F95660082DEB7 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		C3C4D1781A0FAC9B0082DEB7 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		C3C4D1791A0FAC9B0082DEB7 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		C3C4D17A1A0FAC9B0082DEB7 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		C3C4D17B1A0FAC9B0082DEB7 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		C3C512FC1A0ED7E2007E23D9 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		C3C512FD1A0ED7E2007E23D9 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 		C3C513011A0EDA22007E23D9 /* quit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quit.png; sourceTree = "<group>"; };
@@ -118,8 +132,12 @@
 				C3D4DFF41A0BA5D600B1B67F /* GameViewController.m */,
 				C3C513051A0EDF92007E23D9 /* SettingsViewController.h */,
 				C3C513061A0EDF92007E23D9 /* SettingsViewController.m */,
+				C3C4D1681A0F86FD0082DEB7 /* HighScoreViewController.h */,
+				C3C4D1691A0F86FD0082DEB7 /* HighScoreViewController.m */,
 				C3D4E0001A0BAA4200B1B67F /* GridCell.h */,
 				C3D4E0011A0BAA4200B1B67F /* GridCell.m */,
+				C3C4D16B1A0F95660082DEB7 /* Score.h */,
+				C3C4D16C1A0F95660082DEB7 /* Score.m */,
 				C3D4DFD71A0BA54600B1B67F /* Main.storyboard */,
 				C3D4DFDA1A0BA54600B1B67F /* Images.xcassets */,
 				C3D4DFDC1A0BA54600B1B67F /* LaunchScreen.xib */,
@@ -131,6 +149,10 @@
 		C3D4DFCD1A0BA54600B1B67F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3C4D1781A0FAC9B0082DEB7 /* down.png */,
+				C3C4D1791A0FAC9B0082DEB7 /* left.png */,
+				C3C4D17A1A0FAC9B0082DEB7 /* right.png */,
+				C3C4D17B1A0FAC9B0082DEB7 /* up.png */,
 				C3618FF91A0F669200B6A1F8 /* beep.mp3 */,
 				C3C513031A0EDAB6007E23D9 /* high_score.png */,
 				C3C513011A0EDA22007E23D9 /* quit.png */,
@@ -253,7 +275,11 @@
 				C3C513001A0ED7E2007E23D9 /* setting.png in Resources */,
 				C3618FFA1A0F669200B6A1F8 /* beep.mp3 in Resources */,
 				C3D4DFD91A0BA54600B1B67F /* Main.storyboard in Resources */,
+				C3C4D17F1A0FAC9B0082DEB7 /* up.png in Resources */,
+				C3C4D17C1A0FAC9B0082DEB7 /* down.png in Resources */,
+				C3C4D17E1A0FAC9B0082DEB7 /* right.png in Resources */,
 				C3D4DFDE1A0BA54600B1B67F /* LaunchScreen.xib in Resources */,
+				C3C4D17D1A0FAC9B0082DEB7 /* left.png in Resources */,
 				C3D4DFFC1A0BA76600B1B67F /* shroomcell.png in Resources */,
 				C3D4DFDB1A0BA54600B1B67F /* Images.xcassets in Resources */,
 				C3D4DFFB1A0BA76600B1B67F /* emptycell.png in Resources */,
@@ -275,10 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D4DFF51A0BA5D600B1B67F /* GameViewController.m in Sources */,
+				C3C4D16A1A0F86FD0082DEB7 /* HighScoreViewController.m in Sources */,
 				C3D4DFD61A0BA54600B1B67F /* ViewController.m in Sources */,
 				C3D4DFD31A0BA54600B1B67F /* AppDelegate.m in Sources */,
 				C3C513071A0EDF92007E23D9 /* SettingsViewController.m in Sources */,
 				C3D4E0021A0BAA4200B1B67F /* GridCell.m in Sources */,
+				C3C4D16D1A0F95660082DEB7 /* Score.m in Sources */,
 				C3D4DFD01A0BA54600B1B67F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self setTitle:@"Home"];
+    
+    NSString *archivePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"score.archive"];
+    [[NSUserDefaults standardUserDefaults] setValue:archivePath forKey:@"score_path"];
 }
 
 - (void)didReceiveMemoryWarning {

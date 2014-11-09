@@ -17,7 +17,8 @@
 -(IBAction)btnBack:(id)sender {
     [self.timer invalidate];
     [self.gridCell gameStop];
-    [self dismissViewControllerAnimated:YES completion:nil];
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(IBAction)btnPressed:(UIButton*)sender {
@@ -41,7 +42,17 @@
     }
 }
 
+-(IBAction)btnRestart:(id)sender {
+////    // Remove the old subview
+////    for(UIView *subView in [self.gridView subviews]){
+////        [subView removeFromSuperview];
+////    }
+//    
+    [self prepare];
+}
+
 -(void) update {
+    
     
     // If countdown is more than zero, just update the label text and wait for another time lapse
     if(self.countdown > 0){
@@ -81,9 +92,9 @@
     
     if(![self.gridCell isRunning]){
         [self.timer invalidate];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oh no, you died!" message:[NSString stringWithFormat:@"You scored %@", self.score.text] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oh no, you died!" message:[NSString stringWithFormat:@"You scored %@.\nPlease insert your name", self.score.text] delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        alert.alertViewStyle = UIAlertViewStylePlainTextInput;
         [alert show];
-        NSLog(@"you lost");
         return;
     }
     
@@ -101,13 +112,14 @@
     self.score.text = [NSString stringWithFormat:@"%d", self.gridCell.score];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-
-    _defaults = [NSUserDefaults standardUserDefaults];
+-(void)prepare{
     
-    self.isStart = false;
+    [self.timer invalidate];
+    
+    // Remove all subview
+    for(UIView *subView in [self.gridView subviews]){
+        [subView removeFromSuperview];
+    }
     
     // Initialize GridCell Object
     self.gridCell = [[GridCell alloc] init];
@@ -118,15 +130,67 @@
     initScreen.alpha = 0.2;
     [self.gridView addSubview:initScreen];
     
+    // Add countdown label to it
+    self.countdownLabel.text = @"Ready";
+    self.countdownLabel.hidden = NO;
+    [self.gridView addSubview:self.countdownLabel];
+    
     // Set countdown starting number
     // Then start the countdown by calling update for every 1 second
     self.countdown = 3;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(update) userInfo:nil repeats:YES];
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    _defaults = [NSUserDefaults standardUserDefaults];
+    self.backButton.backgroundColor = [UIColor colorWithRed:0/255.0 green:151.0/255.0 blue:255.0/255.0 alpha:1.0];
+    self.resetButton.backgroundColor = [UIColor redColor];
+    
+    [self prepare];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    // Get user name from alert box
+    NSString *userName = [[alertView textFieldAtIndex:0] text];
+    
+    // Get object archive
+    NSMutableArray *scores = [NSKeyedUnarchiver unarchiveObjectWithFile:[_defaults stringForKey:@"score_path"]];
+    if(scores == nil) scores = [[NSMutableArray alloc] init];
+    
+    // Add new score to the scores object
+    [scores addObject:[NSArray arrayWithObjects:userName, [NSString stringWithFormat:@"%d", self.gridCell.score], nil]];
+    
+    // Save back to archive
+    [NSKeyedArchiver archiveRootObject:scores toFile:[_defaults stringForKey:@"score_path"]];
+    
+    // Push to High Score view
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UITableViewController *viewController = (UITableViewController *)[storyboard instantiateViewControllerWithIdentifier:@"highscore"];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+-(BOOL)alertViewShouldEnableFirstOtherButton:(UIAlertView *)alertView {
+    NSString *inputText = [[alertView textFieldAtIndex:0] text];
+    if( [inputText length] >= 2 ) return YES;
+    return NO;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [super viewWillDisappear:animated];
 }
 
 /*
