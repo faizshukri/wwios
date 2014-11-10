@@ -25,6 +25,6 @@
 -(IBAction)btnPressed:(UIButton*)sender;
 -(IBAction)btnBack:(id)sender;
 -(IBAction)btnRestart:(id)sender;
--(void) update;
+-(void)update;
 -(void)prepare;
 @end

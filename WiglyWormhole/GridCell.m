@@ -20,7 +20,6 @@
         
         // Initiate running status to true, and win status to be false
         self.isRunning = true;
-        self.isWin = false;
         
         // Initiate score to 0
         self.score = 0;
